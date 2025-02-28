@@ -18,41 +18,41 @@
   border-radius: 0.5em;
   overflow: hidden;
 
-  & .card__image {
+  .card__image {
     object-fit: cover;
   }
 
-  & .card__title {
+  .card__title {
     margin: 0.7em;
     font-family: var(--font-family);
   }
 
-  & .card__stars {
+  .card__stars {
     display: inline-block;
     margin: -1em 1.5em;
     font-size: 1em;
     color: var(--star-color);
   }
 
-  & .card__rating {
+  .card__rating {
     display: inline-block;
     margin: -1em;
     font-family: var(--font-family);
     color: var(--primary-color);
   }
 
-  & .card__address {
+  .card__address {
     margin: 1em 1.4em;
     font-family: var(--font-family);
   }
 
-  & .card__description {
+  .card__description {
     margin: 1em 1.7em;
     font-family: var(--font-family);
     color: var(--primary-color);
   }
 
-  & .card__chip {
+  .card__chip {
     display: inline-block;
     margin: 0.4em;
     padding: 10px 15px;
@@ -60,17 +60,16 @@
     font-family: var(--font-family);
     background-color: var(--chip-color);
     border-radius: 10em;
+    &:hover {
+      cursor: pointer;
+      color: var(--secondary-color);
+      background-color: var(--chip-color-hovered);
+    }
   }
 
-  & .card__reserve {
+  .card__reserve {
     margin: 1em 0.8em;
     font-family: var(--font-family);
     color: var(--secondary-color);
   }
-}
-
-.card__chip:hover {
-  cursor: pointer;
-  color: var(--secondary-color);
-  background-color: var(--chip-color-hovered);
 }
